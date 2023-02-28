@@ -29,7 +29,7 @@ public class ReportCommandTest {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
         command.execute();
-        String expectedOutput = String.format("Robot %d of %d: %d,%d,%s",
+        String expectedOutput = String.format("Robot %d of %d: %d,%d,%s \n",
                 robot.getId(), table.getRobots().size(), robot.getX(), robot.getY(), robot.getDirection().toString());
         Assert.assertEquals(expectedOutput, outContent.toString());
     }

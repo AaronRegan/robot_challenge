@@ -6,8 +6,8 @@ import com.insignia.robot.model.Table;
 
 public class ReportCommand implements Command {
 
-    private Robot activeRobot;
-    private Table table;
+    private final Robot activeRobot;
+    private final Table table;
 
     public ReportCommand(Robot activeRobot, Table table) {
         this.activeRobot = activeRobot;
@@ -22,7 +22,7 @@ public class ReportCommand implements Command {
             int x = activeRobot.getX();
             int y = activeRobot.getY();
             Direction direction = activeRobot.getDirection();
-            System.out.printf("Robot %d of %d: %d,%d,%s",
+            System.out.printf("Robot %d of %d: %d,%d,%s \n",
                     robotId, robotCount, x, y, direction.toString());
         }
     }

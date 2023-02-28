@@ -6,12 +6,10 @@ import com.insignia.robot.model.Table;
 
 public class RightCommand implements Command {
 
-    private Robot activeRobot;
-    private Table table;
+    private final Robot activeRobot;
 
-    public RightCommand(Robot activeRobot, Table table) {
+    public RightCommand(Robot activeRobot) {
         this.activeRobot = activeRobot;
-        this.table = table;
     }
 
     @Override

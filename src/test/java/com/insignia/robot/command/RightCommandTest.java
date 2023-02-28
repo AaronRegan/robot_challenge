@@ -19,7 +19,7 @@ public class RightCommandTest {
         table = new Table(5, 5);
         activeRobot = new Robot(1,1, 1, Direction.NORTH);
         table.addRobot(activeRobot);
-        rightCommand = new RightCommand(activeRobot, table);
+        rightCommand = new RightCommand(activeRobot);
     }
 
     @Test

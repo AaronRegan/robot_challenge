@@ -5,8 +5,8 @@ import com.insignia.robot.model.Table;
 
 public class MoveCommand implements Command {
 
-    private Robot activeRobot;
-    private Table table;
+    private final Robot activeRobot;
+    private final Table table;
 
     public MoveCommand(Robot activeRobot, Table table) {
         this.activeRobot = activeRobot;

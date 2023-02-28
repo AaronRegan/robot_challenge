@@ -7,11 +7,9 @@ import com.insignia.robot.model.Table;
 public class LeftCommand implements Command {
 
     private Robot activeRobot;
-    private Table table;
 
-    public LeftCommand(Robot activeRobot, Table table) {
+    public LeftCommand(Robot activeRobot) {
         this.activeRobot = activeRobot;
-        this.table = table;
     }
 
     @Override

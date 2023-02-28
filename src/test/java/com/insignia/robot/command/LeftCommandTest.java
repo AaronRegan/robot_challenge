@@ -18,7 +18,7 @@ public class LeftCommandTest {
         robot = new Robot(0,0, 0, Direction.NORTH);
         table = new Table(5, 5);
         table.addRobot(robot);
-        command = new LeftCommand(robot, table);
+        command = new LeftCommand(robot);
     }
 
     @Test

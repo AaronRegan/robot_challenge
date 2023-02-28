@@ -8,8 +8,11 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static final int BOARD_SIZE_X = 5;
+    private static final int BOARD_SIZE_Y = 5;
+
     public static void main(String[] args) {
-            Table table = new Table(5, 5);
+            Table table = new Table(BOARD_SIZE_X, BOARD_SIZE_Y);
             RobotController robotController = new RobotController();
 
             Scanner scanner = new Scanner(System.in);

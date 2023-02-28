@@ -1,4 +1,4 @@
-package com.insignia.robot.service;
+package com.insignia.robot.command;
 
 public interface Command {
     /**

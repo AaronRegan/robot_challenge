@@ -1,15 +1,15 @@
-package com.insignia.robot.service;
+package com.insignia.robot.command;
 
 import com.insignia.robot.model.Direction;
 import com.insignia.robot.model.Robot;
 import com.insignia.robot.model.Table;
 
-public class LeftCommand implements Command {
+public class RightCommand implements Command {
 
     private Robot activeRobot;
     private Table table;
 
-    public LeftCommand(Robot activeRobot, Table table) {
+    public RightCommand(Robot activeRobot, Table table) {
         this.activeRobot = activeRobot;
         this.table = table;
     }
@@ -19,16 +19,16 @@ public class LeftCommand implements Command {
         Direction direction = activeRobot.getDirection();
         switch (direction) {
             case NORTH:
-                activeRobot.setDirection(Direction.WEST);
-                break;
-            case EAST:
-                activeRobot.setDirection(Direction.NORTH);
-                break;
-            case SOUTH:
                 activeRobot.setDirection(Direction.EAST);
                 break;
-            case WEST:
+            case EAST:
                 activeRobot.setDirection(Direction.SOUTH);
+                break;
+            case SOUTH:
+                activeRobot.setDirection(Direction.WEST);
+                break;
+            case WEST:
+                activeRobot.setDirection(Direction.NORTH);
                 break;
         }
     }

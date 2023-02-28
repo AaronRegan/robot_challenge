@@ -3,9 +3,8 @@ package com.insignia.robot.controller;
 import com.insignia.robot.model.Direction;
 import com.insignia.robot.model.Robot;
 import com.insignia.robot.model.Table;
-import com.insignia.robot.service.*;
+import com.insignia.robot.command.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

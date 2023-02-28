@@ -1,4 +1,4 @@
-package com.insignia.robot.service;
+package com.insignia.robot.command;
 
 import com.insignia.robot.model.Robot;
 import com.insignia.robot.model.Table;

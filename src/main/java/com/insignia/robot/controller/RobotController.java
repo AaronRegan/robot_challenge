@@ -26,14 +26,14 @@ public class RobotController {
         }
     }
 
-    public void turnActiveRobotLeft(Table table) {
+    public void turnActiveRobotLeft() {
         if (activeRobot != null) {
             Command leftCommand = new LeftCommand(activeRobot);
             leftCommand.execute();
         }
     }
 
-    public void turnActiveRobotRight(Table table) {
+    public void turnActiveRobotRight() {
         if (activeRobot != null) {
             Command rightCommand = new RightCommand(activeRobot);
             rightCommand.execute();

@@ -40,7 +40,7 @@ public class RobotControllerTest {
     @Test
     public void testTurnActiveRobotLeft() {
         robotController.placeRobot(0, 0, Direction.NORTH, table);
-        robotController.turnActiveRobotLeft(table);
+        robotController.turnActiveRobotLeft();
         Robot activeRobot = robotController.getActiveRobot();
         assertNotNull(activeRobot);
         assertEquals(Direction.WEST, activeRobot.getDirection());
@@ -49,7 +49,7 @@ public class RobotControllerTest {
     @Test
     public void testTurnActiveRobotRight() {
         robotController.placeRobot(0, 0, Direction.NORTH, table);
-        robotController.turnActiveRobotRight(table);
+        robotController.turnActiveRobotRight();
         Robot activeRobot = robotController.getActiveRobot();
         assertNotNull(activeRobot);
         assertEquals(Direction.EAST, activeRobot.getDirection());

@@ -40,9 +40,9 @@ public class Main {
                 } else if (command.equalsIgnoreCase("MOVE")) {
                     robotController.moveActiveRobot(table);
                 } else if (command.equalsIgnoreCase("LEFT")) {
-                    robotController.turnActiveRobotLeft(table);
+                    robotController.turnActiveRobotLeft();
                 } else if (command.equalsIgnoreCase("RIGHT")) {
-                    robotController.turnActiveRobotRight(table);
+                    robotController.turnActiveRobotRight();
                 } else if (command.equalsIgnoreCase("REPORT")) {
                     robotController.reportActiveRobot(table);
                 } else if (command.equalsIgnoreCase("ROBOT")) {

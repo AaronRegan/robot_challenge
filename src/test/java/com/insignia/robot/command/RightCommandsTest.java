@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class RightCommandTest {
+public class RightCommandsTest {
 
     private Table table;
     private Robot activeRobot;

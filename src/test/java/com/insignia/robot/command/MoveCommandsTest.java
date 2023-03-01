@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MoveCommandTest {
+public class MoveCommandsTest {
 
     private Robot robot;
     private Table table;

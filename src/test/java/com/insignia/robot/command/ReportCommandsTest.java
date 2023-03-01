@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-public class ReportCommandTest {
+public class ReportCommandsTest {
 
     private Robot robot;
     private Table table;
